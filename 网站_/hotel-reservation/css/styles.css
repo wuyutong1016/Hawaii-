@@ -1,0 +1,118 @@
+/* 
+This file contains the CSS styles for the hotel reservation project. 
+It includes styles for the navigation bar, image slider, search container, 
+hotel information sections, and other components.
+*/
+
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+    color: #00695c;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #00695c;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* logo样式 */
+.navbar .logo {
+    height: 60px;
+    width: auto;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: #004d40;
+    transform: scale(1.1);
+}
+
+/* 房间信息样式 */
+.room-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004d40;
+    margin: 15px 0;
+}
+
+.room-description {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* 查询栏目容器样式 */
+.search-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* 语言切换按钮样式 */
+.lang-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.lang-switcher button {
+    background-color: #00695c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.lang-switcher button:hover {
+    background-color: #004d40;
+}
